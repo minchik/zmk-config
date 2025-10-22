@@ -8,6 +8,12 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+// Modifier shortcuts
+#define HYPR LC(LS(LA(LGUI)))
+#define RHYPR LC(RS(RA(RGUI)))
+#define CAG LC(LA(LGUI))
+#define MEH LC(LS(LALT))
+
 / {
         behaviors {
                 hml: homerow_mods_left {
@@ -60,10 +66,10 @@
 // | SHFT |  Z  |  X  |HYPR/C|MEH/V| B  |   |  N  |MEH/M|HYPR/,|  . |  /  | ]   |
 //                    | TT6 | MO1 |LT5/ENT|  |LT4/SPC|MO2|LT3/BSPC|
                         bindings = <
-   &kp TAB   &kp Q        &kp W        &kp E                    &kp R                   &kp T       &kp Y         &kp U                   &kp I                        &kp O         &kp P          &kp LBKT
-   &kp ESC   &hml LGUI A  &hml LALT S  &hml LCTRL D             &hml LSHFT F            &kp G       &kp H         &hmr RSHFT J            &hmr RCTRL K                 &hmr RALT L   &hmr RGUI SEMI &kp SQT
-   &kp LSHFT &kp Z        &kp X        &hml LC(LS(LA(LGUI))) C  &hml LC(LA(LGUI)) V     &kp B       &kp N         &hmr LC(LA(LGUI)) M     &hmr LC(RS(RA(RGUI))) COMMA  &kp DOT       &kp FSLH       &kp RBKT
-                                       &tog 6                   &mo 1                   &ltp 5 RET  &ltp 4 SPACE  &mo 2                   &ltp 3 BSPC
+   &kp TAB   &kp Q        &kp W        &kp E          &kp R          &kp T       &kp Y         &kp U          &kp I          &kp O         &kp P          &kp LBKT
+   &kp ESC   &hml LGUI A  &hml LALT S  &hml LCTRL D   &hml LSHFT F   &kp G       &kp H         &hmr RSHFT J   &hmr RCTRL K   &hmr RALT L   &hmr RGUI SEMI &kp SQT
+   &kp LSHFT &kp Z        &kp X        &hml HYPR C    &hml CAG V     &kp B       &kp N         &hmr CAG M     &hmr RHYPR COMMA  &kp DOT       &kp FSLH       &kp RBKT
+                                       &tog 6         &mo 1          &ltp 5 RET  &ltp 4 SPACE  &mo 2          &ltp 3 BSPC
                         >;
                 };
 
@@ -90,10 +96,10 @@
 // | SHFT |     |  1  |  2  |  3  |  =  |   |     |     |HYPR/|MEH/ |     |     |
 //                    |     |  0  |     |   |     |     | DEL |
                         bindings = <
-   &kp TAB   &kp KP_MULTIPLY &kp N7  &kp N8  &kp N9  &kp KP_PLUS   &none  &none      &none            &none           &none      &none
-   &kp LCTRL &kp KP_DIVIDE   &kp N4  &kp N5  &kp N6  &kp KP_MINUS  &none  &kp RSHFT  &kp RCTRL        &kp RALT        &kp RGUI   &none
-   &kp LSHFT &none           &kp N1  &kp N2  &kp N3  &kp KP_EQUAL  &none  &none      &hml LC(LS(LALT)) FSLH  &hml LC(LS(LA(LGUI))) DOT  &none      &none
-                                     &trans  &kp N0  &trans        &trans  &trans   &kp DEL
+   &kp TAB   &kp KP_MULTIPLY &kp N7  &kp N8  &kp N9  &kp KP_PLUS   &none   &none      &none          &none         &none      &none
+   &kp LCTRL &kp KP_DIVIDE   &kp N4  &kp N5  &kp N6  &kp KP_MINUS  &none   &kp RSHFT  &kp RCTRL      &kp RALT      &kp RGUI   &none
+   &kp LSHFT &none           &kp N1  &kp N2  &kp N3  &kp KP_EQUAL  &none   &none      &hml MEH FSLH  &hml HYPR DOT &none      &none
+                                     &trans  &kp N0  &trans        &trans  &trans     &kp DEL
                         >;
                 };
 
