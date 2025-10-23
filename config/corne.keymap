@@ -163,19 +163,5 @@
                         >;
                 };
 
-                layer_7 {
-                        display-name = "Empty";
-// -----------------------------------------------------------------------------------------
-// |      |     |     |     |     |     |   |     |     |     |     |     |     |
-// |      |     |     |     |     |     |   |     |     |     |     |     |     |
-// |      |     |     |     |     |     |   |     |     |     |     |     |     |
-//                    |     |     |     |   |     |     |     |
-                        bindings = <
-   &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-   &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-   &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-                        &none  &none  &none    &none  &none  &none
-                        >;
-                };
         };
 };
