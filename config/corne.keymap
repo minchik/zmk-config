@@ -66,8 +66,8 @@
 // | SHFT |  Z  |  X  |HYPR/C|MEH/V| B  |   |  N  |MEH/M|HYPR/,|  . |  /  | ]   |
 //                    | TT6 | MO1 |LT5/ENT|  |LT4/SPC|MO2|LT3/BSPC|
                         bindings = <
-   &kp TAB   &kp Q        &kp W        &kp E          &kp R          &kp T       &kp Y         &kp U          &kp I          &kp O         &kp P          &kp LBKT
-   &kp ESC   &hml LGUI A  &hml LALT S  &hml LCTRL D   &hml LSHFT F   &kp G       &kp H         &hmr RSHFT J   &hmr RCTRL K   &hmr RALT L   &hmr RGUI SEMI &kp SQT
+   &kp TAB   &kp Q        &kp W        &kp E          &kp R          &kp T       &kp Y         &kp U          &kp I             &kp O         &kp P          &kp LBKT
+   &kp ESC   &hml LGUI A  &hml LALT S  &hml LCTRL D   &hml LSHFT F   &kp G       &kp H         &hmr RSHFT J   &hmr RCTRL K      &hmr RALT L   &hmr RGUI SEMI &kp SQT
    &kp LSHFT &kp Z        &kp X        &hml HYPR C    &hml CAG V     &kp B       &kp N         &hmr CAG M     &hmr RHYPR COMMA  &kp DOT       &kp FSLH       &kp RBKT
                                        &tog 6         &mo 1          &ltp 5 RET  &ltp 4 SPACE  &mo 2          &ltp 3 BSPC
                         >;
@@ -141,10 +141,10 @@
 // |      |     |     |     |     |     |   |     | PREV| PLAY| NEXT|     |     |
 //                    |     |     |     |   |     |     |     |
                         bindings = <
-   &none  &none     &none     &none      &none      &none    &none  &none      &kp F15     &kp F14    &kp F16    &none
-   &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &none  &kp C_VOL_DN &kp C_MUTE  &kp C_VOL_UP &none    &none
-   &none  &none     &none     &none      &none      &none    &none  &kp C_PREV &kp C_PP    &kp C_NEXT &none      &none
-                              &none      &none      &trans   &none  &none      &none
+   &none  &none     &none     &none      &none      &none    &none  &none         &kp F15     &kp F14       &kp F16  &none
+   &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &none  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &none    &none
+   &none  &none     &none     &none      &none      &none    &none  &kp C_PREV    &kp C_PP    &kp C_NEXT    &none    &none
+                              &none      &none      &trans   &none  &none         &none
                         >;
                 };
 
@@ -156,9 +156,9 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M  |  ,  |  .  |  /  | ]   |
 //                    | TT6 | GUI | ENT |   | SPC |     |BSPC |
                         bindings = <
-   &kp TAB   &kp Q  &kp W  &kp E    &kp R     &kp T      &kp Y     &kp U   &kp I      &kp O    &kp P     &kp LBKT
-   &kp ESC   &kp A  &kp S  &kp D    &kp F     &kp G      &kp H     &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-   &kp LSHFT &kp Z  &kp X  &kp C    &kp V     &kp B      &kp N     &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
+   &kp TAB   &kp Q  &kp W  &kp E    &kp R     &kp T      &kp Y      &kp U   &kp I      &kp O    &kp P     &kp LBKT
+   &kp ESC   &kp A  &kp S  &kp D    &kp F     &kp G      &kp H      &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
+   &kp LSHFT &kp Z  &kp X  &kp C    &kp V     &kp B      &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
                            &tog 6   &kp LGUI  &kp RET    &kp SPACE  &none   &kp BSPC
                         >;
                 };
