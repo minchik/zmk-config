@@ -57,7 +57,7 @@
                 td_layer: tap_dance_layer {
                         compatible = "zmk,behavior-tap-dance";
                         #binding-cells = <0>;
-                        tapping-term-ms = <200>;
+                        tapping-term-ms = <300>;
                         bindings = <&tog 6>, <&tog 7>;
                 };
         };
